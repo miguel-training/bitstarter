@@ -126,18 +126,20 @@
     <div class="container">
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Product</h1>
+          <h1>SiReSe</h1>
         </div>
       </div>
       <div class="row-fluid subheading">
         <div class="span12">
-          <p class="lead">A simple way to remotely deploy applications into a 
-          Secure Element</p>
+          <p class="lead">A simple way to remotely deploy applications into  
+          Secure Elements</p>
         </div>
       </div>
+
+      <!-- first content row -->
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/400x300">
+          <img class="img-polaroid" alt="This is how SiReSe works" src="http://img809.imageshack.us/img809/714/37m.png">
         </div>
       
       <!--We define a new 'actions' div to contain statistics, order and share buttons-->
@@ -147,17 +149,17 @@
             <div class="span4">
               <!-- dividing lines different for horiz/vertical layouts-->
               <div class="linediv-l">
-                <h3>1000</h3> <p>backers</p>
+                <h3>3</h3> <p>backers</p>
               </div>
             </div>
             <div class="span4">
               <div class="linediv-c">
-                <h3>$6000</h3> <p>of $10,000</p>
+                <h3>$60</h3> <p>of $100,000</p>
               </div>
             </div>
             <div class="span4">
               <div class="linediv-r">
-                <h3>10</h3> <p>days left</p>
+                <h3>185</h3> <p>days left</p>
               </div>
             </div>
            </div>
@@ -165,8 +167,8 @@
           <div class="span10 offset1">
             <!-- bootstrap progress bar -->
             <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 60%;"></div>
-              <div class="bar bar-warning" style="width: 40%;"></div>
+              <div class="bar bar-success" style="width: 6%;"></div>
+              <div class="bar bar-warning" style="width: 94%;"></div>
             </div>
           </div>
           <div class="span6 offset3 order">
@@ -178,10 +180,10 @@
             <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
           </div>
-        </div>
+        </div> <!-- crowfunding statistics -->
     </div>  <!-- container-->
 
-    <!-- the marketing copy begins -->
+    <!-- Second content row: the marketing copy begins -->
     <div class="row-fluid section1">
       <div class="span5 offset1 asset">
         <img class="img-polaroid" src="http://placehold.it/400x300">
@@ -195,10 +197,11 @@
           <br>
           Examples of such Secure Elements are the chips in some credit cards or the 
           SIM cards in most mobile phones. They are the modern evolution of 
-          <i>Smart Card.s</i>
+          <i>Smart Cards.</i>
           <br>
           Due to the rollout of mobile-NFC, many smartphones now have a very handy 
-          interface for the applications running in their Secure Elements.
+          interface for the applications running in their Secure Elements: they can be used in 
+          all readers being rolled out for contactless cards: payments, transit, loyalty, access control...
         </p>
       </div>
     </div>
@@ -224,24 +227,39 @@
       <div class="accordion-group">
         <div class="accordion-heading">
           <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-            What does FAQ stand for?
+            What is a Secure Element?
           </a>
         </div>
         <div id="collapseOne" class="accordion-body collapse">
           <div class="accordion-inner">
-            Frequently Asked Questions.
+            It is a tamper-resistant chip, containing an execution environment, crypto co-processor, RAM and flash-memory.
           </div>
         </div>
       </div>
       <div class="accordion-group">
         <div class="accordion-heading">
           <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-            What are Frequently Asked Questions?
+            Can you tell me some examples of applications running on Secure Elements?
           </a>
         </div>
         <div id="collapseTwo" class="accordion-body collapse">
           <div class="accordion-inner">
-            Questions which are commonly asked by users.
+            <ul><a href="https://www.emvco.com/">EMV</a> credit cards, called 'chip and pin' in the UK</ul>
+            <ul>Cards to access public transit systems</ul>
+            <ul>Access control cards, like the employees badges used to enter facilities</ul>
+            <ul>Cards used to open some kind of rental cars, such as those of <a href="http://www.hertzondemand.com/">Hertz on Demand</a></ul>
+          </div>
+        </div>
+      </div>
+       <div class="accordion-group">
+        <div class="accordion-heading">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+            What programming languages are used for applications in Secure Elements?
+          </a>
+        </div>
+        <div id="collapseThree" class="accordion-body collapse">
+          <div class="accordion-inner">
+            Mostly a subset of Java called JavaCard.
           </div>
         </div>
       </div>
