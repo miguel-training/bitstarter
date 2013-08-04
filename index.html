@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Version written for hw6 -->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -110,7 +111,8 @@
     </style>
   </head>
   <body>
-    <!-- Mobile-friendly navbar adated from example in bootstrap/starter-template-->
+    <!-- Mobile-friendly navbar adapted from example. -->
+    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -132,8 +134,13 @@
     </div> <!-- navbar -->
 
     <!-- Row-fluid inside containers to achieve a resizable layout -->
+    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+    <!-- http://stackoverflow.com/a/12270322 -->
     <!-- This is the main header: name and one-liner -->
     <div class="container">
+      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+      <!-- www.google.com/fonts/specimen/Ubuntu -->
+      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->      
       <div class="row-fluid heading">
         <div class="span12">
           <h1>SiReSe: <i>Simple Remote Security</i></h1>
@@ -235,10 +242,13 @@
       
       <!--We define a new 'actions' div to contain statistics, order and share buttons-->
         <div class="span5 actions">
+          <div class="row-fluid">
           <div class="span8 offset2">
-           <div class="statistics">
+           <div class="row-fluid statistics">
             <div class="span4">
-              <!-- dividing lines different for horiz/vertical layouts-->
+                <!-- linediv-l and linediv-r give dividing lines that look
+                different in horizontal and vertical layouts, illustrating
+                media queries. -->
               <div class="linediv-l">
                 <h3>3</h3> <p>backers</p>
               </div>
@@ -254,22 +264,30 @@
               </div>
             </div>
            </div>
+           </div>
           </div>
+          <div class="row-fluid">
           <div class="span10 offset1">
-            <!-- bootstrap progress bar -->
+            <!-- Bootstrap progress bar -->
+            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
               <div class="bar bar-success" style="width: 6%;"></div>
               <div class="bar bar-warning" style="width: 94%;"></div>
             </div>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span6 offset3 order">
             <!-- Standard bootstrap button -->
             <button class="btn btn-success btn-large">Preorder</button>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span8 offset2 social">
             <!-- Social buttons -->
             <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+          </div>
           </div>
         </div> <!-- crowfunding statistics -->
     </div>  <!-- container-->
